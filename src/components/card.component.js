@@ -2,36 +2,18 @@ import React from 'react';
 import ReactCardFlip from "react-card-flip";
 import "./card.component.css";
 
-class CardComponent extends React.Component{
-    constructor(props){
-        super(props);
-        this.props = this.props;
-        this.state = {
-            open: false,
-            matched: false
-          };
-        this.handleClick = this.handleClick.bind(this);
-    }
-
-    handleClick(e) {
-        e.preventDefault();
-        this.setState(prevState => ({ open: true }));
-      }
-  render() {
-      return(
+const CardComponent = props => (
 <div>
-<ReactCardFlip isFlipped={this.state.matched || this.state.open} flipDirection="vertical">
-        <div onClick={this.handleClick} className="backCard">
+<ReactCardFlip isFlipped={props.data.open || props.data.matched} flipDirection="vertical">
+        <div className="backCard">
         </div>
  
         
           <div>
-          <img className="frontCard" src={`assets/candies/${this.props.data.name}.jpg`} width="150" height="150"/>
+          <img className="frontCard" src={`assets/candies/${props.data.name}.jpg`} alt={props.data.name}/>
         </div>
       </ReactCardFlip>
 </div>
-  )
-};
-}
+  );
 
 export default CardComponent;

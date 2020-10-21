@@ -1,0 +1,11 @@
+.playground{
+    display: flex;
+    flex-wrap: wrap;
+    width: 60%;
+}
+
+span.card {
+    margin: 20px;
+    width: 150px;
+    height: 150px;
+}
