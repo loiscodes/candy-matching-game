@@ -1,0 +1,8 @@
+.backCard,
+.frontCard {
+  width: 150px;
+  height: 150px;
+  border: 1px #264653 solid;
+  border-radius: 5%;
+  background: #2A9D8F; 
+}
