@@ -1,6 +1,5 @@
-import React from "react";
-import GameboardComponent from "./components/gameboard.component";
-import "./App.css";
+import React from 'react';
+import GameboardComponent from './components/gameboard.component';
 
 function App() {
   return (
@@ -11,3 +10,4 @@ function App() {
 }
 
 export default App;
+ 
